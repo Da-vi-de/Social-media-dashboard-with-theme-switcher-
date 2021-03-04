@@ -1,0 +1,390 @@
+/* =================
+     Color Variables
+   ================= */
+/* Dark Theme */
+/* Light Theme */
+/* ===================
+    Font size Variables
+    =================== */
+/* ===================
+   Media query variables
+    =================== */
+/* =================
+        Layout
+   ================= */
+* {
+  box-sizing: border-box;
+  margin: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: white; }
+
+.main-container {
+  width: 100%;
+  height: 244px;
+  padding: 25px 165px;
+  background-color: #f5f7ff;
+  border-radius: 0px 0px 20px 20px; }
+
+.header {
+  display: flex;
+  justify-content: space-between; }
+
+.bg-mode-position {
+  padding-top: 8px; }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; }
+
+.card {
+  width: 285px;
+  height: 216px;
+  margin: 46px 30px 0 0;
+  top: 136px;
+  left: 180px;
+  padding-bottom: 35px;
+  background-color: #f0f2fa;
+  border-radius: 5px; }
+  .card:hover {
+    background-color: #e0e4f0; }
+
+.card-color-fb-tw {
+  height: 4px;
+  left: 0;
+  background: #198ff5;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
+
+.card-color-insta {
+  position: relative; }
+  .card-color-insta::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    top: -1px;
+    left: 0;
+    background: linear-gradient(to right, #fdc468, #df4996);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+
+.card-color-yt {
+  height: 4px;
+  left: 0;
+  background: #c4032a;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; }
+
+.content-position-1 {
+  margin-top: 30px;
+  padding-right: 15px;
+  text-align: center; }
+
+.container-2,
+.container-3 {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px; }
+
+.card-2 {
+  background-color: #f0f2fa;
+  height: 125px;
+  margin: 0 30px 24px 0;
+  padding: 27px 24px 27px 0;
+  border-radius: 5px; }
+  .card-2:hover {
+    background-color: #e0e4f0; }
+
+.social-icon {
+  float: right; }
+
+.bottom-card-2 {
+  width: 210px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between; }
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.875rem; }
+
+/* =================
+        Typography
+   ================= */
+.intro {
+  font-size: 1.75rem; }
+
+.subtitle {
+  font-size: 0.875rem;
+  line-height: 17px;
+  font-weight: 700;
+  color: #63687e; }
+
+.theme-choice-text {
+  font-weight: 700;
+  font-size: 0.875rem;
+  color: #aeb3cb; }
+
+li {
+  list-style-type: none; }
+
+.fb {
+  list-style: url("../images/icon-facebook.svg");
+  list-style-position: inside; }
+
+.tw {
+  list-style: url("../images/icon-twitter.svg");
+  list-style-position: inside; }
+
+.insta {
+  list-style: url("../images/icon-instagram.svg");
+  list-style-position: inside;
+  white-space: nowrap; }
+
+.yt {
+  list-style: url("../images/icon-youtube.svg");
+  list-style-position: inside; }
+
+.social-contact-text {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #63687e;
+  vertical-align: top; }
+
+.followers-number {
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 3.5rem; }
+
+.followers-text {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 5px;
+  color: #63687e;
+  padding-bottom: 15px; }
+
+.up {
+  list-style: url("../images/icon-up.svg");
+  list-style-position: inside; }
+
+.down {
+  list-style: url("../images/icon-down.svg");
+  list-style-position: inside; }
+
+.update-text {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #1db489; }
+
+.text-red {
+  color: #c4032a; }
+
+.intro-2 {
+  font-weight: 700;
+  color: #63687e;
+  padding-top: 38px;
+  padding-bottom: 24px; }
+
+.social-number {
+  padding-top: 23px;
+  font-size: 2rem;
+  font-weight: 700; }
+
+.attribution {
+  font-size: 0.875rem;
+  text-decoration: none;
+  color: #63687e; }
+
+.attribution:hover, .attribution:focus,
+.attribution:active {
+  color: #8b97c6; }
+
+/* =================
+     Switch toggle
+   ================= */
+.switch-container {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 24px; }
+
+.switch-container input {
+  opacity: 0;
+  width: 0;
+  height: 0; }
+
+.switch {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #378fe6, #3eda82);
+  -webkit-transition: .4s;
+  transition: .4s; }
+  .switch:before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 13px;
+    left: 12%;
+    top: 18%;
+    background-color: #aeb3cb;
+    -webkit-transition: .4s;
+    transition: .4s; }
+
+input:checked + .switch {
+  background-color: #aeb3cb;
+  background-image: none; }
+  input:checked + .switch:before {
+    background-color: white;
+    -webkit-transform: translateX(22px);
+    -ms-transform: translateX(22px);
+    transform: translateX(22px); }
+  input:checked + .switch:hover {
+    background-image: linear-gradient(to right, #378fe6, #3eda82); }
+
+input:focus + .switch {
+  box-shadow: 0 0 1px #aeb3cb; }
+  input:focus + .switch:hover {
+    background-image: linear-gradient(to right, #378fe6, #3eda82); }
+
+.switch.round {
+  border-radius: 34px; }
+  .switch.round:before {
+    border-radius: 50%; }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* =================
+        Layout
+    ================= */
+  .main-container {
+    padding: 0; }
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 15px 0 15px;
+    padding-top: 36px; }
+  .line {
+    border-bottom: 0.1px solid #63687e;
+    padding-top: 15px; }
+  .container,
+  .container-2,
+  .container-3 {
+    display: flex;
+    flex-direction: column; }
+  .card,
+  .intro-2 {
+    margin-left: 14px; }
+  .card-2 {
+    margin: 0 25px 16px 25px; }
+  /* =================
+        Typography
+    ================= */
+  .intro {
+    font-size: 1.5rem; }
+  .theme-choice-text {
+    margin-right: 150px;
+    color: #63687e; } }
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px) {
+  /* =================
+        Layout
+================= */
+  .main-container {
+    padding: 0; }
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 25px 0 25px;
+    padding-top: 36px; }
+  .line {
+    border-bottom: 0.1px solid #63687e;
+    padding-top: 15px; }
+  .container,
+  .container-2,
+  .container-3 {
+    display: flex;
+    flex-direction: column; }
+  .card {
+    margin-left: 100px; }
+  .card-2 {
+    margin: 0 35px 16px 35px; }
+  .bottom-card-2 {
+    width: 350px; }
+  /* =================
+        Typography
+    ================= */
+  .intro {
+    font-size: 1.5rem; }
+  .intro-2 {
+    text-align: center; }
+  .theme-choice-text {
+    margin-right: 300px;
+    color: #63687e; } }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+  /* =================
+        Layout
+    ================= */
+  .main-container {
+    padding: 20px 20px; }
+  .card {
+    width: 150px;
+    height: 200px;
+    margin: 46px 0 0 30px; }
+  .container-2,
+  .container-3 {
+    display: grid;
+    grid-template-columns: 300px 300px; }
+  .container-2 {
+    margin-left: 100px; }
+  /* =================
+        Typography
+    ================= */
+  .intro {
+    padding-left: 20px;
+    font-size: 1.5rem; }
+  .subtitle {
+    padding-left: 20px; }
+  .followers-number {
+    font-size: 1.75rem; }
+  .followers-text {
+    letter-spacing: 0; }
+  .social-contact-text,
+  .update-text {
+    font-size: 0.75rem; }
+  .intro-2 {
+    text-align: center; } }
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1199px) {
+  /* =================
+        Layout
+    ================= */
+  .main-container {
+    padding: 20px 20px; }
+  .container-2,
+  .container-3 {
+    display: grid;
+    grid-template-columns: 300px 300px; }
+  .container-2 {
+    margin-left: 220px; }
+  /* =================
+    Typography
+  ================= */
+  .intro-2 {
+    text-align: center; } }
+
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1399px) {
+  /* =================
+        Layout
+    ================= */
+  .main-container {
+    padding: 20px 0 20px 20px; } }

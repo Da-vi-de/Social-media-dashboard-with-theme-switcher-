@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"> 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/main.css">
   <script defer src="script.js"></script>
   
   <title>Frontend Mentor | Social media dashboard with theme switcher</title>
@@ -15,129 +15,215 @@
 </head>
 
 <body>
-  <div class="container">
+  <main class="main-container">
         <!--Header-->
-    <header>
-      <h1 class="header">Social Media Dashboard</h1>
-      <p class="subtitle">Total Followers: 23,004</p>
+    <header class="header">
+      <div>
+        <h1 class="intro">Social Media Dashboard</h1>
+        <p class="subtitle">Total Followers: 23,004</p>
+        <div  class="line"></div>
+     </div>
 
-      <p class="theme-choice-text">Dark Mode</p>
-      <label>
+    
+    <div class="bg-mode-position">
+      <label for="checkbox" class="theme-choice-text">Dark Mode</label>
+      <label class="switch-container">
         <input type="checkbox" class="toggle">
         <span class="switch round"></span>
       </label>
+    </div>
     </header>
 
     <!--Dashboard-1-->
-
-  <div class="columns">
-    <ul class="content-position-1 column-color-1">
-      <li class="social-contact-text">@nathanf</li>
+<div class="container ">
+  <div class="card">
+    <div class="card-color-fb-tw"></div>
+    <ul class="content-position-1">
+      <li class="fb"><span class="social-contact-text">@nathanf</span></li>
       <li class="followers-number"> 1987</li>
       <li class="followers-text">Followers</li>
-      <li class="day-update-text">12 Today</li>
+      <li class="up"><span class="update-text">12 Today</span></li>
     </ul>
   </div>
 
-  <div class="columns">
-    <ul class="content-position-1 column-color-1">
-      <li class="social-contact-text">@nathanf</li>
+  <div class="card">
+    <div class="card-color-fb-tw"></div>
+    <ul class="content-position-1">
+      <li class="tw"><span class="social-contact-text">@nathanf</span></li>
       <li class="followers-number">1044</li>
       <li class="followers-text">Followers</li>
-      <li class="day-update-text">99 Today</li>
+      <li class="up"><span class="update-text">99 Today</span></li>
     </ul>
   </div>
 
-  <div class="columns">
-    <ul class="content-position-1 column-color-2">
-      <li class="social-contact-text">@realnathanf</li>
+  <div class="card">
+    <div class="card-color-insta"></div>
+    <ul class="content-position-1">
+      <li class="insta"><span class="social-contact-text">@realnathanf</span></li>
       <li class="followers-number">11k</li>
       <li class="followers-text">Followers</li>
-      <li class="day-update-text">1099 Today</li>
+      <li class="up"><span class="update-text">1099 Today</span></li>
     </ul>
   </div>
   
-  <div class="columns">
-    <ul class="content-position-1 column-color-3">
-      <li class="social-contact-text">Nathan F.</li>
+  <div class="card">
+    <div class=" card-color-yt"></div>
+    <ul class="content-position-1">
+      <li class="yt"><span class="social-contact-text">Nathan F.</span></li>
       <li class="followers-number">8239</li>
       <li class="followers-text">Subscribers</li>
-      <li class="day-update-text">144 Today</li>
+      <li class="down"><span class="update-text text-red">144 Today</span></li>
     </ul>
   </div>
+</div>
 
-<h2> Overview - Today</h2>
+<h2 class="intro-2"> Overview - Today</h2>
 
 <!--Dashboard-2-->
+<div class="container-2">
+  <div class="card-2">
+    <ul class="content-position-2">
+      <li class="social-contact-text">
+        Page Views
+        <img src="../images/icon-facebook.svg"
+        class="social-icon"  
+        alt="social icon"
+        >
+      </li>
+      <div class="bottom-card-2">
+        <li class="social-number">87</li>
+        <li class="up"><span class="update-text">3%</span></li>
+    </div>
+    </ul>
+   </div>
 
-<div class="rows">
-  <ul class="content-position-2">
-    <li class="social-type-text">Page Views</li>
-    <li class="social-number"> 87</li>
-    <li class="social-status-text">3%</li>
-  </ul>
-</div>
+    <div class="card-2">
+      <ul class="content-position-2">
+        <li  class="social-contact-text">
+          Likes
+          <img src="../images/icon-facebook.svg"
+          class="social-icon"  
+          alt="social icon"
+          >
+        </li>
+        <div class="bottom-card-2">
+          <li class="social-number">52</li>
+          <li class="down"><span class="update-text text-red">2%</span></li>
+      </div>
+      </ul>
+    </div>
   
-  <div class="rows">
-    <ul class="content-position-2">
-      <li  class="social-type-text"> Likes</li>
-      <li class="social-number">52</li>
-      <li class="social-status-text">2%</li>
-    </ul>
-  </div>
- 
-  <div class="rows">
-    <ul class="content-position-2">
-      <li  class="social-type-text">Likes</li>
-      <li class="social-number">5462</li>
-      <li class="social-status-text">2257%</li>
-    </ul>
+    <div class="card-2">
+      <ul class="content-position-2">
+        <li  class="social-contact-text">
+          Likes
+          <img src="../images/icon-instagram.svg" 
+          class="social-icon" 
+          alt="social icon"
+          >
+        </li>
+        <div class="bottom-card-2">
+          <li class="social-number">5462</li>
+          <li class="up"><span class="update-text">2257%</span></li>
+      </div>
+      </ul>
+    </div>
+    
+    <div class="card-2">
+      <ul class="content-position-2">
+        <li  class="social-contact-text">
+         Profile Views
+          <img src="../images/icon-instagram.svg"
+          class="social-icon"
+          alt="social icon"
+          >
+        </li>
+        <div class="bottom-card-2">
+          <li class="social-number">52k</li>
+          <li class="up"><span class="update-text">1375%</span></li>
+      </div>
+      </ul>
+   </div>
+   
+    <div class="container-3">
+      <div class="card-2">
+      <ul class="content-position-2">
+        <li  class="social-contact-text">
+          Retweets
+          <img src="../images/icon-twitter.svg"
+          class="social-icon" 
+          alt="social icon"
+          >
+        </li>
+        <div class="bottom-card-2">
+          <li class="social-number">117</li>
+          <li class="up"><span class="update-text">303%</span></li>
+      </div>
+      </ul>
+      </div>
+
+    <div class="card-2">
+      <ul class="content-position-2">
+        <li  class="social-contact-text">
+          Likes
+          <img src="../images/icon-twitter.svg" 
+          class="social-icon" 
+          alt="social icon"
+          >
+        </li>
+        <div class="bottom-card-2">
+          <li class="social-number">507</li>
+          <li class="up"><span class="update-text">553%</span></li>
+      </div>
+      </ul>
+    </div>
+  
+    <div class="card-2">
+      <ul class="content-position-2">
+        <li  class="social-contact-text">
+          Likes
+          <img src="../images/icon-youtube.svg"
+          class="social-icon"  
+          alt="social icon"
+          >
+        </li>
+        <div class="bottom-card-2">
+          <li class="social-number">107</li>
+          <li class="down"><span class="update-text text-red">19%</span></li>
+      </div>
+      </ul>
+    </div>
+    
+    <div class="card-2">
+      <ul class="content-position-2">
+        <li  class="social-contact-text">
+          Total Views
+          <img src="../images/icon-youtube.svg"
+          class="social-icon"  
+          alt="social icon"
+          >
+        </li>
+        <div class="bottom-card-2">
+          <li class="social-number">1407</li>
+          <li class="down"><span class="update-text text-red">12%</span></li>
+      </div>
+      </ul>
+    </div>
   </div>
   
-  <div class="rows">
-    <ul class="content-position-2">
-      <li  class="social-type-text">Profile Views</li>
-      <li class="social-number">52k</li>
-      <li class="social-status-text">1375%</li>
-    </ul>
-  </div>
-
-  <div class="rows">
-    <ul class="content-position-2">
-      <li  class="social-type-text">Retweets</li>
-      <li class="social-number">117</li>
-      <li class="social-status-text">303%</li>
-    </ul>
-  </div>
- 
-  <div class="rows">
-    <ul class="content-position-2">
-      <li  class="social-type-text">Likes</li>
-      <li class="social-number">507</li>
-      <li class="social-status-text">553%</li>
-    </ul>
-  </div>
-
-  <div class="rows">
-    <ul class="content-position-2">
-      <li  class="social-type-text">Likes</li>
-      <li class="social-number">107</li>
-      <li class="social-status-text">19%</li>
-    </ul>
-  </div>
-
-  <div class="rows">
-    <ul class="content-position-2">
-      <li  class="social-type-text">Total Views</li>
-      <li class="social-number">1407</li>
-      <li class="social-status-text">12%</li>
-    </ul>
-  </div>
-</div>
-
+    <!--Footer-->
   <footer class="footer">
-    Challenge by <a class="attribution" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor </a>.
-    Coded by <a class="attribution" href="#">Davide</a>.
+    Challenge by 
+    <a class="attribution" href="https://www.frontendmentor.io?ref=challenge" 
+    target="_blank">
+    Frontend Mentor 
+   </a>.
+    Coded by 
+    <a class="attribution" href="https://github.com/Da-vi-de/Social-media-dashboard-with-theme-switcher-" 
+    target="_blank">
+    Davide
+   </a>.
   </footer>
-</body>
+  </main>
+ </body>
 </html>

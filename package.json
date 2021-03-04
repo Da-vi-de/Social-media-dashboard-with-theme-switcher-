@@ -1,0 +1,20 @@
+{
+  "name": "social-media-dashboard-with-theme-switcher-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)",
+  "main": "script.js",
+  "scripts": {
+    "watch": "node-sass -o css scss/main.scss -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Da-vi-de/Social-media-dashboard-with-theme-switcher-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Da-vi-de/Social-media-dashboard-with-theme-switcher-/issues"
+  },
+  "homepage": "https://github.com/Da-vi-de/Social-media-dashboard-with-theme-switcher-#readme"
+}

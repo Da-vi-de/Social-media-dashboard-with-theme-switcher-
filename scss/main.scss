@@ -1,0 +1,560 @@
+ /* =================
+     Color Variables
+   ================= */
+$color-lime-green: hsl(163, 72%, 41%);
+$color-bright-red: hsl(356, 69%, 56%);
+$color-facebook: hsl(208, 92%, 53%);
+$color-twitter: hsl(203, 89%, 53%);
+$color-instagram: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+$color-youtube: hsl(348, 97%, 39%);
+
+/* Dark Theme */
+$color-very-dark-blue: hsl(230, 17%, 14%);
+$color-very-dark-blue-bg-pattern: hsl(232, 19%, 15%);
+$color-dark-desatureted-blue: hsl(228, 28%, 20%);
+$color-desatureted-blue: hsl(228, 34%, 66%);
+$color-white: hsl(0, 0%, 100%);
+
+/* Light Theme */
+$color-toggle-light: hsl(230, 22%, 74%);
+$color-toggle-light-bg: linear-gradient(to right,#378fe6,#3eda82);
+$color-card-hover: hsl(225, 35%, 91%);
+$color-white-bg: hsl(0, 0%, 100%);
+$color-very-pale-blue: hsl(228, 100%, 98%);
+$color-light-grayish-blue:  hsl(227, 47%, 96%);
+$color-dark-grayish-blue:  hsl(228, 12%, 44%);
+$color-very-dark-blue: hsl(230, 17%, 14%);
+
+ /* ===================
+    Font size Variables
+    =================== */
+$font-size-lg: 1.75rem;
+$font-size-md: 1.5rem;
+$font-size-sm: 0.875rem;
+$font-size-extra-sm: 0.75rem;
+$font-followers-number: 3.5rem;
+$font-status-number: 2rem;
+
+ /* ===================
+   Media query variables
+    =================== */
+
+
+
+ /* =================
+        Layout
+   ================= */
+ * {
+     box-sizing: border-box;
+     margin: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: $color-white-bg;
+}
+
+.main-container {
+    width: 100%;
+    height: 244px;
+    padding: 25px 165px;
+    background-color: $color-very-pale-blue;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.bg-mode-position {
+   padding-top: 8px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.card { 
+    width: 285px;
+    height: 216px;
+    margin: 46px 30px 0 0;
+    top: 136px;
+    left: 180px;
+    padding-bottom: 35px;
+    background-color: $color-light-grayish-blue;
+    border-radius: 5px;
+
+    &:hover {
+        background-color:  $color-card-hover;
+    }
+}
+
+.card-color-fb-tw {
+    height: 4px;
+    left: 0;
+    background: $color-facebook;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-color-insta {
+    position: relative;
+
+&::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    top: -1px;
+    left: 0;
+    background: $color-instagram;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+ }
+}
+
+.card-color-yt {
+    height: 4px;
+    left: 0;
+    background: $color-youtube;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; 
+}
+
+.content-position-1 {
+    margin-top: 30px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.container-2,
+.container-3 {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+}
+
+.card-2 {
+    background-color: $color-light-grayish-blue;
+    height: 125px;
+    margin: 0 30px 24px 0;
+    padding: 27px 24px 27px 0;
+    border-radius: 5px;
+
+    &:hover {
+        background-color:  $color-card-hover;
+    }
+}
+
+.social-icon {
+  float: right;
+}
+
+.bottom-card-2 {
+    width: 210px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: $font-size-sm;
+  }
+
+ /* =================
+        Typography
+   ================= */
+.intro {
+    font-size: $font-size-lg;
+}
+
+.subtitle {
+    font-size: $font-size-sm;
+    line-height: 17px;
+    font-weight: 700;
+    color: $color-dark-grayish-blue;
+}
+
+.theme-choice-text {
+    font-weight: 700;
+    font-size: $font-size-sm;
+    color: $color-toggle-light; 
+}
+
+li {
+    list-style-type: none;
+}
+
+.fb {
+    list-style: url('../images/icon-facebook.svg');
+    list-style-position: inside;
+}
+
+.tw {
+    list-style: url('../images/icon-twitter.svg');
+    list-style-position: inside;
+}
+
+.insta {
+    list-style: url('../images/icon-instagram.svg');
+    list-style-position: inside;
+    white-space: nowrap;
+    
+}
+
+.yt {
+    list-style: url('../images/icon-youtube.svg');
+    list-style-position: inside;
+}
+
+.social-contact-text {
+    font-size: $font-size-sm;
+    font-weight: 700;
+    color: $color-dark-grayish-blue;
+    vertical-align: top;
+}
+
+.followers-number {
+    padding-top: 20px;
+    font-weight: 700;
+    font-size: $font-followers-number;
+}
+
+.followers-text {
+    text-transform: uppercase;
+    font-size: $font-size-sm;
+    letter-spacing: 5px;
+    color: $color-dark-grayish-blue;
+    padding-bottom: 15px; 
+}
+
+.up {
+    list-style: url('../images/icon-up.svg');
+    list-style-position: inside;
+}
+
+.down {
+    list-style: url('../images/icon-down.svg');
+    list-style-position: inside;
+}
+
+.update-text {
+    font-size: $font-size-sm;
+    font-weight: 700;
+    color: $color-lime-green;
+}
+
+
+.text-red {
+    color: $color-youtube;
+}
+
+.intro-2 {
+    font-weight: 700;
+    color: $color-dark-grayish-blue;
+    padding-top: 38px;
+    padding-bottom: 24px;
+}
+
+.social-number {
+   padding-top: 23px;
+   font-size: $font-status-number;
+   font-weight: 700;
+}
+
+.attribution {
+    font-size: $font-size-sm;
+    text-decoration: none;
+    color: $color-dark-grayish-blue;
+  }
+  
+  .attribution:hover, .attribution:focus, 
+  .attribution:active  {
+    color:$color-desatureted-blue;
+  }
+
+ /* =================
+     Switch toggle
+   ================= */
+.switch-container {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+  }
+  
+.switch-container input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+  }
+
+.switch {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: $color-toggle-light-bg; 
+    -webkit-transition: .4s;
+    transition: .4s;
+    
+    &:before {
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 13px;
+        left: 12%;
+        top: 18%;
+       
+        background-color: $color-toggle-light;
+        -webkit-transition: .4s;
+        transition: .4s; 
+    }
+}
+
+input:checked + .switch {
+    background-color: $color-toggle-light;
+    background-image: none;
+    
+    &:before {
+        background-color: white;
+        -webkit-transform: translateX(22px);
+        -ms-transform: translateX(22px);
+        transform: translateX(22px); 
+    }
+    
+    &:hover {
+        background-image: $color-toggle-light-bg;
+    }
+}
+
+input:focus + .switch {
+    box-shadow: 0 0 1px $color-toggle-light;
+
+    &:hover {
+        background-image: $color-toggle-light-bg;
+    }
+}
+
+.switch.round {
+    border-radius: 34px;
+
+    &:before {
+        border-radius: 50%; 
+    }
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
+
+ /* =================
+        Layout
+    ================= */
+    .main-container {
+        padding: 0;
+    }
+
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 15px 0 15px;
+        padding-top: 36px;
+    }
+
+    .line {
+        border-bottom: 0.1px solid  $color-dark-grayish-blue;
+        padding-top: 15px;
+      }
+
+    .container,
+    .container-2,
+    .container-3 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card,
+    .intro-2 {
+       margin-left: 14px;
+    }
+
+    .card-2 {
+       margin: 0 25px 16px 25px;
+    }
+
+ /* =================
+        Typography
+    ================= */
+    .intro {
+        font-size: $font-size-md;
+    }
+
+    .theme-choice-text {
+        margin-right: 150px;
+       color:  $color-dark-grayish-blue;
+    }
+
+}
+
+@media only screen 
+  and (min-device-width: 481px) 
+  and (max-device-width: 767px) {
+/* =================
+        Layout
+================= */
+    .main-container {
+        padding: 0;
+    }
+
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 25px 0 25px;
+        padding-top: 36px;
+    }
+
+    .line {
+        border-bottom: 0.1px solid  $color-dark-grayish-blue;
+        padding-top: 15px;
+    }
+
+    .container,
+    .container-2,
+    .container-3  {
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        margin-left: 100px;
+    }
+
+    .card-2 {
+        margin: 0 35px 16px 35px;
+        }
+
+    .bottom-card-2 {
+        width: 350px;
+    }
+
+     /* =================
+        Typography
+    ================= */
+    .intro {
+        font-size: $font-size-md;
+    }
+
+    .intro-2 {
+        text-align: center;
+    }
+
+    .theme-choice-text {
+        margin-right: 300px;
+       color:  $color-dark-grayish-blue;
+    }
+  }
+
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1023px) {
+    /* =================
+        Layout
+    ================= */
+    .main-container {
+        padding: 20px 20px;
+    }
+
+    .card {
+        width: 150px;
+        height: 200px;
+        margin: 46px 0 0 30px;
+    }
+
+    .container-2,
+    .container-3 {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    }
+
+    .container-2 {
+        margin-left: 100px;
+    }
+ 
+    /* =================
+        Typography
+    ================= */
+    .intro {
+        padding-left: 20px;
+        font-size: $font-size-md;
+    }
+
+    .subtitle {
+        padding-left: 20px;
+    }
+
+    .followers-number {
+        font-size: $font-size-lg;
+    }
+
+    .followers-text {
+        letter-spacing: 0;
+    }
+
+    .social-contact-text,
+    .update-text {
+        font-size: $font-size-extra-sm;
+    }
+
+    .intro-2 {
+        text-align: center;
+    }
+  }
+
+  @media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1199px) {
+   /* =================
+        Layout
+    ================= */
+    .main-container {
+        padding: 20px 20px;
+    }
+
+    .container-2,
+    .container-3 {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    }
+
+    .container-2 {
+        margin-left: 220px;
+    }
+  /* =================
+    Typography
+  ================= */
+    .intro-2 {
+        text-align: center;
+    }
+  }
+
+  @media only screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1399px) {
+     /* =================
+        Layout
+    ================= */
+    .main-container {
+        padding: 20px 0 20px 20px;
+    }
+  }
+
