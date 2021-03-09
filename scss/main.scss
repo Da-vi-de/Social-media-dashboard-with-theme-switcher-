@@ -1,0 +1,194 @@
+@import "base";
+@import "layout";
+@import "components";
+
+ /* =================
+        Typography
+   ================= */
+.intro {
+    font-size: $font-size-lg;
+    color: $color-black;
+
+  @media only screen 
+  and (min-device-width: 320px)  
+  and (max-device-width: 767px) {
+
+    font-size: $font-size-md;
+  }
+
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1023px) {
+
+    padding-left: 20px;
+    font-size: $font-size-md;
+  }
+}
+
+.subtitle {
+    @include typographyStyles($color-dark-grayish-blue); 
+    line-height: 17px;
+
+    @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1023px) {
+
+        padding-left: 20px;
+    }
+}
+
+.theme-choice-text {
+  @include typographyStyles($color-black); 
+     
+  @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px) {
+
+    margin-right: 150px;
+    color:  $color-dark-grayish-blue; 
+  }
+
+  @media only screen 
+  and (min-device-width: 481px) 
+  and (max-device-width: 767px) {
+
+    margin-right: 300px;
+    color:  $color-dark-grayish-blue;
+  }
+}
+
+.social-contact-text {
+    @include typographyStyles($color-dark-grayish-blue); 
+    vertical-align: top;
+
+    @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1023px) {
+
+        font-size: $font-size-extra-sm;
+    }
+}
+
+.followers-number {
+    padding-top: 20px;
+    font-weight: $font-weight-bold;
+    font-size: $font-followers-number;
+    color: $color-black;
+
+    @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1023px) {
+
+        font-size: $font-size-lg;
+    }
+}
+
+.followers-text {
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    font-size: $font-size-sm;
+    color: $color-dark-grayish-blue;
+    letter-spacing: 5px;
+    
+    @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1023px) {
+
+        letter-spacing: 0;
+    }
+}
+
+.update-text {
+    @include typographyStyles($color-lime-green);
+
+    @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1023px) {
+
+        font-size: $font-size-extra-sm;
+    }
+}
+
+.text-red {
+    color: $color-youtube;
+}
+
+.intro-2 {
+    padding-top: 38px;
+    padding-bottom: 24px;
+    font-weight: $font-weight-bold;
+    color: $color-black;
+   
+
+    @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px) {
+
+        margin-left: 14px;
+    }
+
+    @media only screen 
+    and (min-device-width: 481px) 
+    and (max-device-width: 1199px) {
+
+        text-align: center;
+    }
+}
+
+.social-number {
+   padding-top: 23px;
+   font-size: $font-status-number;
+   font-weight: $font-weight-bold;
+   color: $color-black;
+}
+
+.attribution {
+    text-decoration: none;
+    font-size: $font-size-sm;
+    color: $color-dark-grayish-blue;
+  }
+  
+  .attribution:hover, .attribution:focus, 
+  .attribution:active  {
+    color:$color-black;
+  }
+  
+ /* =================
+         Icons
+   ================= */
+
+  li {
+    list-style-type: none;
+}
+
+.fb {
+    list-style: url('../images/icon-facebook.svg');
+    list-style-position: inside;
+}
+
+.tw {
+    list-style: url('../images/icon-twitter.svg');
+    list-style-position: inside;
+}
+
+.insta {
+    list-style: url('../images/icon-instagram.svg');
+    list-style-position: inside;
+    white-space: nowrap;
+    
+}
+
+.yt {
+    list-style: url('../images/icon-youtube.svg');
+    list-style-position: inside;
+}
+
+.up {
+    list-style: url('../images/icon-up.svg');
+    list-style-position: inside;
+}
+
+.down {
+    list-style: url('../images/icon-down.svg');
+    list-style-position: inside;
+} 
