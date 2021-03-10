@@ -262,7 +262,7 @@ input:focus + .switch {
   float: right; }
 
 .bottom-card-2 {
-  width: 210px;
+  width: 250px;
   display: flex;
   align-items: flex-end;
   justify-content: space-between; }
@@ -309,10 +309,18 @@ input:focus + .switch {
 .social-contact-text {
   font-size: 0.875rem;
   font-weight: 700;
-  color: var(--color-card-text);
-  vertical-align: top; }
+  color: var(--color-card-text); }
   @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
     .social-contact-text {
+      font-size: 0.75rem; } }
+
+.social-contact-text-2 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-card-text);
+  padding-left: 24px; }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+    .social-contact-text-2 {
       font-size: 0.75rem; } }
 
 .followers-number {
@@ -358,7 +366,7 @@ input:focus + .switch {
       text-align: center; } }
 
 .social-number {
-  padding-top: 23px;
+  padding: 23px 0 0 24px;
   font-size: 2rem;
   font-weight: 700;
   color: var(--color-headings-numbers); }
