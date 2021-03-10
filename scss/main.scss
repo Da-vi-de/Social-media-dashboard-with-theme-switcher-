@@ -59,12 +59,24 @@
 
 .social-contact-text {
     @include typographyStyles($color-dark-grayish-blue); 
-    vertical-align: top;
+    
 
     @media only screen 
     and (min-device-width: 768px) 
     and (max-device-width: 1023px) {
 
+        font-size: $font-size-extra-sm;
+    }
+}
+
+.social-contact-text-2 {
+    @include typographyStyles($color-dark-grayish-blue); 
+    padding-left: 24px;
+
+    @media only screen 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1023px) {
+        
         font-size: $font-size-extra-sm;
     }
 }
@@ -100,6 +112,7 @@
 
 .update-text {
     @include typographyStyles($color-lime-green);
+   
 
     @media only screen 
     and (min-device-width: 768px) 
@@ -136,10 +149,14 @@
 }
 
 .social-number {
-   padding-top: 23px;
+   padding: 23px 0 0 24px;
    font-size: $font-status-number;
    font-weight: $font-weight-bold;
    color: $color-black;
+}
+
+.icon-up {
+
 }
 
 .attribution {
