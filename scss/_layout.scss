@@ -8,23 +8,20 @@
     background-color: $color-very-pale-blue;
     border-radius: 0px 0px 20px 20px;
 
-    @media only screen 
-    and (min-device-width: 320px)  
-    and (max-device-width: 767px) {
+    @media all and (min-width: 320px)  
+    and (max-width: 767px) {
 
         padding: 0;
   }
 
-    @media only screen 
-    and (min-device-width: 768px) 
-    and (max-device-width: 1199px) {
+    @media all and (min-width: 768px) 
+    and (max-width: 1199px) {
 
         padding: 20px 20px;
     }
 
-    @media only screen 
-    and (min-device-width: 1200px) 
-    and (max-device-width: 1399px) {
+    @media all and (min-width: 1200px) 
+    and (max-width: 1399px) {
 
         padding: 20px 0 20px 20px;
     }
@@ -34,9 +31,8 @@
     display: flex;
     justify-content: space-between;
 
-    @media only screen 
-    and (min-device-width: 320px)  
-    and (max-device-width: 767px) {
+    @media all and (min-width: 320px)  
+    and (max-width: 767px) {
     
         display: flex;
         flex-wrap: wrap;
@@ -45,9 +41,8 @@
   }
 }
 
-@media only screen 
-  and (min-device-width: 320px)  
-  and (max-device-width: 767px) {
+@media all and (min-width: 320px)  
+  and (max-width: 767px) {
     .line {
         border-bottom: 0.1px solid  $color-dark-grayish-blue;
         padding-top: 15px;
@@ -64,9 +59,8 @@
     flex-direction: row;
     align-items: flex-start;
 
-    @media only screen 
-    and (min-device-width: 320px)  
-    and (max-device-width: 767px) {
+    @media all and (min-width: 320px)  
+    and (max-width: 767px) {
 
         @include containerTechnique;
     }
@@ -79,17 +73,15 @@
 }
 
 
-@media only screen 
-    and (min-device-width: 768px) 
-    and (max-device-width: 1023px) {
+@media all and (min-width: 768px) 
+    and (max-width: 1023px) {
 
         .container-2 {
             margin-left: 100px;
         
 
-        @media only screen 
-        and (min-device-width: 1024px) 
-        and (max-device-width: 1199px) {
+        @media all and (min-width: 1024px) 
+        and (max-width: 1199px) {
 
             margin-left: 220px;
         }
@@ -101,16 +93,14 @@
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
 
-    @media only screen 
-    and (min-device-width: 320px)  
-    and (max-device-width: 767px) {
+    @media all and (min-width: 320px)  
+    and (max-width: 767px) {
 
         @include containerTechnique;
   }
 
-    @media only screen 
-    and (min-device-width: 768px) 
-    and (max-device-width: 1199px) {
+    @media all and (min-width: 768px) 
+    and (max-width: 1199px) {
 
         display: grid;
         grid-template-columns: 300px 300px;
