@@ -10,7 +10,7 @@ toggle.addEventListener('change', function() {
      }
 })
 
-// Little helper function just to not write everything in the above if else condition.
+// Little helper function just to not write everything in the above if else statement.
 let transition = () => {
      document.documentElement.classList.add('transition');
      window.setTimeout(() => {

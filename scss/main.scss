@@ -9,16 +9,16 @@
     font-size: $font-size-lg;
     color: $color-black;
 
-  @media only screen 
-  and (min-device-width: 320px)  
-  and (max-device-width: 767px) {
+    @media all and (min-width: 320px)  
+    and (max-width: 767px)
+    
+  {
 
     font-size: $font-size-md;
   }
 
-  @media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1023px) {
+  @media all and (min-width: 768px) 
+  and (max-width: 1023px){
 
     padding-left: 20px;
     font-size: $font-size-md;
@@ -29,9 +29,8 @@
     @include typographyStyles($color-dark-grayish-blue); 
     line-height: 17px;
 
-    @media only screen 
-    and (min-device-width: 768px) 
-    and (max-device-width: 1023px) {
+    @media all and (min-width: 768px) 
+    and (max-width: 1023px) {
 
         padding-left: 20px;
     }
@@ -40,17 +39,15 @@
 .theme-choice-text {
   @include typographyStyles($color-black); 
      
-  @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px) {
+  @media all and (min-width: 320px) 
+  and (max-width: 480px) {
 
     margin-right: 150px;
     color:  $color-dark-grayish-blue; 
   }
 
-  @media only screen 
-  and (min-device-width: 481px) 
-  and (max-device-width: 767px) {
+  @media all and (min-width: 481px) 
+  and (max-width: 767px) {
 
     margin-right: 300px;
     color:  $color-dark-grayish-blue;
@@ -61,9 +58,8 @@
     @include typographyStyles($color-dark-grayish-blue); 
     
 
-    @media only screen 
-    and (min-device-width: 768px) 
-    and (max-device-width: 1023px) {
+    @media all and (min-width: 768px) 
+    and (max-width: 1023px) {
 
         font-size: $font-size-extra-sm;
     }
@@ -73,9 +69,8 @@
     @include typographyStyles($color-dark-grayish-blue); 
     padding-left: 24px;
 
-    @media only screen 
-    and (min-device-width: 768px) 
-    and (max-device-width: 1023px) {
+    @media all and (min-width: 768px) 
+    and (max-width: 1023px) {
         
         font-size: $font-size-extra-sm;
     }
@@ -87,9 +82,8 @@
     font-size: $font-followers-number;
     color: $color-black;
 
-    @media only screen 
-    and (min-device-width: 768px) 
-    and (max-device-width: 1023px) {
+    @media all and (min-width: 768px) 
+    and (max-width: 1023px) {
 
         font-size: $font-size-lg;
     }
@@ -102,9 +96,8 @@
     color: $color-dark-grayish-blue;
     letter-spacing: 5px;
     
-    @media only screen 
-    and (min-device-width: 768px) 
-    and (max-device-width: 1023px) {
+    @media all and (min-width: 768px) 
+    and (max-width: 1023px) {
 
         letter-spacing: 0;
     }
@@ -114,9 +107,8 @@
     @include typographyStyles($color-lime-green);
    
 
-    @media only screen 
-    and (min-device-width: 768px) 
-    and (max-device-width: 1023px) {
+    @media all and (min-width: 768px) 
+    and (max-width: 1023px) {
 
         font-size: $font-size-extra-sm;
     }
@@ -133,16 +125,14 @@
     color: $color-black;
    
 
-    @media only screen 
-    and (min-device-width: 320px) 
-    and (max-device-width: 480px) {
+    @media all and (min-width: 320px) 
+    and (max-width: 480px) {
 
         margin-left: 14px;
     }
 
-    @media only screen 
-    and (min-device-width: 481px) 
-    and (max-device-width: 1199px) {
+    @media all and (min-width: 481px) 
+    and (max-width: 1199px) {
 
         text-align: center;
     }
@@ -153,10 +143,6 @@
    font-size: $font-status-number;
    font-weight: $font-weight-bold;
    color: $color-black;
-}
-
-.icon-up {
-
 }
 
 .attribution {
