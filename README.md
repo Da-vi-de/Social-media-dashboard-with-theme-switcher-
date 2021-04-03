@@ -1,4 +1,4 @@
-# Frontend Mentor - Dine Website Challenge solution
+# Frontend Mentor -Social Media Dashboard With Theme Switcher Challenge solution
 
 This is a solution to the [Social Media dashboard with theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
