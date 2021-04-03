@@ -10,7 +10,6 @@ This is a solution to the [Social Media dashboard with theme switcher challenge 
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Author](#author)
-  - [Acknowledgments](#acknowledgments)
 
 ### The challenge
 
